@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class WeatherService {
 
-    private static String API_URL = "https://api.openweathermap.org/data/2.5weather?q={city}&appid={apiKey}&units=metric";
+    private static String API_URL = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric";
 
     @Value("${openweathermap.apiKey}")
     private String apiKey;
