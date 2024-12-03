@@ -14,20 +14,6 @@ public class Weather {
     private long sunset;
     private long timestamp;
 
-    public Weather(String cityName, String countryCode, String description, double temperature, double feelsLike, double humidity, double pressure, double windSpeed, String icon, long sunrise, long sunset, long timestamp) {
-        this.cityName = cityName;
-        this.countryCode = countryCode;
-        this.description = description;
-        this.temperature = temperature;
-        this.feelsLike = feelsLike;
-        this.humidity = humidity;
-        this.pressure = pressure;
-        this.windSpeed = windSpeed;
-        this.icon = icon;
-        this.sunrise = sunrise;
-        this.sunset = sunset;
-        this.timestamp = timestamp;
-    }
 
     public String getCityName() {
         return cityName;
