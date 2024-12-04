@@ -9,6 +9,6 @@ public class RestTemplateConfig {
 
     @Bean
     public RestTemplate restTemplate() {
-        return new RestTemplate();  // This will provide the RestTemplate bean
+        return new RestTemplate();
     }
 }
