@@ -1,12 +1,19 @@
 package com.example.Weather.Data.Model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.text.ParseException;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Entity
 public class Weather {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer id;
+
 	private String cityName;
 	private String countryCode;
 	private String description;
@@ -19,6 +26,14 @@ public class Weather {
 	private String sunrise;
 	private String sunset;
 	private String timestamp;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	@JsonProperty("timestamp")
 	public String getTimestamp() {
